@@ -1,11 +1,38 @@
 {
   "vaultName": "notes",
-  "lastExport": 1710227349917,
+  "lastExport": 1710324382782,
   "pluginVersion": "1.8.01",
   "validBodyClasses": "publish css-settings-manager native-scrollbars theme-light show-inline-title",
   "useCustomHeadContent": false,
   "useCustomFavicon": false,
   "files": [
+    "Roles/BackendDeveloper.md",
+    "Roles/BackendTeamLead.md",
+    "Roles/BusinessAnalyst.md",
+    "Roles/BusinessAnalystTeamLead.md",
+    "Roles/DevManager.md",
+    "Roles/DevOpsEngineer.md",
+    "Roles/DevOpsTeamLead.md",
+    "Roles/FlutterDeveloper.md",
+    "Roles/FlutterTeamLead.md",
+    "Roles/Roles.md",
+    "Roles/ScrumMaster.md",
+    "Roles/Tasks and KPIs.md",
+    "Roles/WebDeveloper.md",
+    "Roles/WebTeamLead.md",
+    "Standards/Code Organisation/Branching strategies.md",
+    "Standards/Code Organisation/Embracing Trunk Based Development.md",
+    "Standards/Code Organisation/GitFlow vs Trunk Based Development.md",
+    "Standards/Code Organisation/Implementing Branching Strategies with NX.md",
+    "Standards/Code Organisation/Monorepo with NX.md",
+    "Standards/Code Organisation/Version Control.md",
+    "Standards/Languages and Frameworks/Angular.md",
+    "Standards/Languages and Frameworks/Flutter.md",
+    "Standards/Languages and Frameworks/Languages and Frameworks.md",
+    "Standards/Languages and Frameworks/NodeJs.md",
+    "Operational Task Breakdown and Logging.md",
+    "index.md",
+    "Software Factory Objectives.md",
     "lib/scripts/graph-wasm.wasm",
     "lib/fonts/94f2f163d4b698242fef.otf",
     "lib/fonts/72505e6a122c6acd5471.woff2",
@@ -67,171 +94,333 @@
   ],
   "fileInfo": {
     "lib/scripts/graph-wasm.wasm": {
-      "modifiedTime": 1710227349917,
+      "modifiedTime": 1710324382782,
       "sourceSize": 23377,
       "exportedPath": "lib/scripts/graph-wasm.wasm",
       "dependencies": []
     },
     "lib/fonts/94f2f163d4b698242fef.otf": {
-      "modifiedTime": 1710227349917,
+      "modifiedTime": 1710324382782,
       "sourceSize": 66800,
       "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
       "dependencies": []
     },
     "lib/fonts/72505e6a122c6acd5471.woff2": {
-      "modifiedTime": 1710227349917,
+      "modifiedTime": 1710324382782,
       "sourceSize": 104232,
       "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
       "dependencies": []
     },
     "lib/fonts/2d5198822ab091ce4305.woff2": {
-      "modifiedTime": 1710227349917,
+      "modifiedTime": 1710324382782,
       "sourceSize": 104332,
       "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
       "dependencies": []
     },
     "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
-      "modifiedTime": 1710227349917,
+      "modifiedTime": 1710324382782,
       "sourceSize": 98868,
       "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
       "dependencies": []
     },
     "lib/fonts/cb10ffd7684cd9836a05.woff2": {
-      "modifiedTime": 1710227349917,
+      "modifiedTime": 1710324382782,
       "sourceSize": 106876,
       "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
       "dependencies": []
     },
     "lib/fonts/b5f0f109bc88052d4000.woff2": {
-      "modifiedTime": 1710227349917,
+      "modifiedTime": 1710324382782,
       "sourceSize": 105804,
       "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
       "dependencies": []
     },
     "lib/fonts/cbe0ae49c52c920fd563.woff2": {
-      "modifiedTime": 1710227349917,
+      "modifiedTime": 1710324382782,
       "sourceSize": 106108,
       "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
       "dependencies": []
     },
     "lib/fonts/535a6cf662596b3bd6a6.woff2": {
-      "modifiedTime": 1710227349917,
+      "modifiedTime": 1710324382782,
       "sourceSize": 111708,
       "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
       "dependencies": []
     },
     "lib/fonts/70cc7ff27245e82ad414.ttf": {
-      "modifiedTime": 1710227349917,
+      "modifiedTime": 1710324382782,
       "sourceSize": 192740,
       "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
       "dependencies": []
     },
     "lib/fonts/454577c22304619db035.ttf": {
-      "modifiedTime": 1710227349917,
+      "modifiedTime": 1710324382782,
       "sourceSize": 161376,
       "exportedPath": "lib/fonts/454577c22304619db035.ttf",
       "dependencies": []
     },
     "lib/fonts/52ac8f3034507f1d9e53.ttf": {
-      "modifiedTime": 1710227349917,
+      "modifiedTime": 1710324382782,
       "sourceSize": 191568,
       "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
       "dependencies": []
     },
     "lib/fonts/05b618077343fbbd92b7.ttf": {
-      "modifiedTime": 1710227349917,
+      "modifiedTime": 1710324382782,
       "sourceSize": 155288,
       "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
       "dependencies": []
     },
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
-      "modifiedTime": 1710227349917,
+      "modifiedTime": 1710324382782,
       "sourceSize": 7876,
       "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
       "dependencies": []
     },
     "lib/media/874d8b8e340f75575caa.svg": {
-      "modifiedTime": 1710227349917,
+      "modifiedTime": 1710324382782,
       "sourceSize": 317,
       "exportedPath": "lib/media/874d8b8e340f75575caa.svg",
       "dependencies": []
     },
     "lib/html/file-tree.html": {
-      "modifiedTime": 1710227349917,
-      "sourceSize": 657,
+      "modifiedTime": 1710324382782,
+      "sourceSize": 12469,
       "exportedPath": "lib/html/file-tree.html",
       "dependencies": []
     },
     "lib/scripts/webpage.js": {
-      "modifiedTime": 1710227349917,
+      "modifiedTime": 1710324382782,
       "sourceSize": 47290,
       "exportedPath": "lib/scripts/webpage.js",
       "dependencies": []
     },
     "lib/scripts/graph-view.js": {
-      "modifiedTime": 1710227349917,
+      "modifiedTime": 1710324382782,
       "sourceSize": 15519,
       "exportedPath": "lib/scripts/graph-view.js",
       "dependencies": []
     },
     "lib/scripts/graph-wasm.js": {
-      "modifiedTime": 1710227349917,
+      "modifiedTime": 1710324382782,
       "sourceSize": 14021,
       "exportedPath": "lib/scripts/graph-wasm.js",
       "dependencies": []
     },
     "lib/scripts/graph-render-worker.js": {
-      "modifiedTime": 1710227349917,
+      "modifiedTime": 1710324382782,
       "sourceSize": 5179,
       "exportedPath": "lib/scripts/graph-render-worker.js",
       "dependencies": []
     },
     "lib/scripts/tinycolor.js": {
-      "modifiedTime": 1710227349917,
+      "modifiedTime": 1710324382782,
       "sourceSize": 29832,
       "exportedPath": "lib/scripts/tinycolor.js",
       "dependencies": []
     },
     "lib/scripts/pixi.js": {
-      "modifiedTime": 1710227349917,
+      "modifiedTime": 1710324382782,
       "sourceSize": 449509,
       "exportedPath": "lib/scripts/pixi.js",
       "dependencies": []
     },
     "lib/scripts/minisearch.js": {
-      "modifiedTime": 1710227349917,
+      "modifiedTime": 1710324382782,
       "sourceSize": 29422,
       "exportedPath": "lib/scripts/minisearch.js",
       "dependencies": []
     },
     "lib/media/favicon.png": {
-      "modifiedTime": 1710227349917,
+      "modifiedTime": 1710324382782,
       "sourceSize": 1105,
       "exportedPath": "lib/media/favicon.png",
       "dependencies": []
     },
     "lib/scripts/graph-data.js": {
-      "modifiedTime": 1710227349917,
-      "sourceSize": 243,
+      "modifiedTime": 1710324382782,
+      "sourceSize": 2487,
       "exportedPath": "lib/scripts/graph-data.js",
       "dependencies": []
     },
     "lib/styles/obsidian.css": {
-      "modifiedTime": 1710227349917,
+      "modifiedTime": 1710324382782,
       "sourceSize": 157292,
       "exportedPath": "lib/styles/obsidian.css",
       "dependencies": []
     },
     "lib/styles/global-variable-styles.css": {
-      "modifiedTime": 1710227349917,
+      "modifiedTime": 1710324382782,
       "sourceSize": 236,
       "exportedPath": "lib/styles/global-variable-styles.css",
       "dependencies": []
     },
     "lib/styles/main-styles.css": {
-      "modifiedTime": 1710227349917,
+      "modifiedTime": 1710324382782,
       "sourceSize": 23130,
       "exportedPath": "lib/styles/main-styles.css",
+      "dependencies": []
+    },
+    "Roles/BackendDeveloper.md": {
+      "modifiedTime": 1710324039491,
+      "sourceSize": 2578,
+      "exportedPath": "roles/backenddeveloper.html",
+      "dependencies": []
+    },
+    "Roles/BackendTeamLead.md": {
+      "modifiedTime": 1710324039491,
+      "sourceSize": 3150,
+      "exportedPath": "roles/backendteamlead.html",
+      "dependencies": []
+    },
+    "Roles/BusinessAnalyst.md": {
+      "modifiedTime": 1710324039491,
+      "sourceSize": 2482,
+      "exportedPath": "roles/businessanalyst.html",
+      "dependencies": []
+    },
+    "Roles/BusinessAnalystTeamLead.md": {
+      "modifiedTime": 1710324039491,
+      "sourceSize": 2770,
+      "exportedPath": "roles/businessanalystteamlead.html",
+      "dependencies": []
+    },
+    "Roles/DevManager.md": {
+      "modifiedTime": 1710324039491,
+      "sourceSize": 2170,
+      "exportedPath": "roles/devmanager.html",
+      "dependencies": []
+    },
+    "Roles/DevOpsEngineer.md": {
+      "modifiedTime": 1710324039491,
+      "sourceSize": 2829,
+      "exportedPath": "roles/devopsengineer.html",
+      "dependencies": []
+    },
+    "Roles/DevOpsTeamLead.md": {
+      "modifiedTime": 1710324039491,
+      "sourceSize": 3075,
+      "exportedPath": "roles/devopsteamlead.html",
+      "dependencies": []
+    },
+    "Roles/FlutterDeveloper.md": {
+      "modifiedTime": 1710324039491,
+      "sourceSize": 4380,
+      "exportedPath": "roles/flutterdeveloper.html",
+      "dependencies": []
+    },
+    "Roles/FlutterTeamLead.md": {
+      "modifiedTime": 1710324039491,
+      "sourceSize": 3659,
+      "exportedPath": "roles/flutterteamlead.html",
+      "dependencies": []
+    },
+    "Roles/Roles.md": {
+      "modifiedTime": 1710324039491,
+      "sourceSize": 394,
+      "exportedPath": "roles/roles.html",
+      "dependencies": []
+    },
+    "Roles/ScrumMaster.md": {
+      "modifiedTime": 1710324039491,
+      "sourceSize": 2403,
+      "exportedPath": "roles/scrummaster.html",
+      "dependencies": []
+    },
+    "Roles/Tasks and KPIs.md": {
+      "modifiedTime": 1710324039491,
+      "sourceSize": 3728,
+      "exportedPath": "roles/tasks-and-kpis.html",
+      "dependencies": []
+    },
+    "Roles/WebDeveloper.md": {
+      "modifiedTime": 1710324039491,
+      "sourceSize": 3415,
+      "exportedPath": "roles/webdeveloper.html",
+      "dependencies": []
+    },
+    "Roles/WebTeamLead.md": {
+      "modifiedTime": 1710324039491,
+      "sourceSize": 3399,
+      "exportedPath": "roles/webteamlead.html",
+      "dependencies": []
+    },
+    "Standards/Code Organisation/Branching strategies.md": {
+      "modifiedTime": 1710324382782,
+      "sourceSize": 144,
+      "exportedPath": "standards/code-organisation/branching-strategies.html",
+      "dependencies": []
+    },
+    "Standards/Code Organisation/Embracing Trunk Based Development.md": {
+      "modifiedTime": 1710324382782,
+      "sourceSize": 2336,
+      "exportedPath": "standards/code-organisation/embracing-trunk-based-development.html",
+      "dependencies": []
+    },
+    "Standards/Code Organisation/GitFlow vs Trunk Based Development.md": {
+      "modifiedTime": 1710324382782,
+      "sourceSize": 2390,
+      "exportedPath": "standards/code-organisation/gitflow-vs-trunk-based-development.html",
+      "dependencies": []
+    },
+    "Standards/Code Organisation/Implementing Branching Strategies with NX.md": {
+      "modifiedTime": 1710324382782,
+      "sourceSize": 2415,
+      "exportedPath": "standards/code-organisation/implementing-branching-strategies-with-nx.html",
+      "dependencies": []
+    },
+    "Standards/Code Organisation/Monorepo with NX.md": {
+      "modifiedTime": 1710324382782,
+      "sourceSize": 5106,
+      "exportedPath": "standards/code-organisation/monorepo-with-nx.html",
+      "dependencies": []
+    },
+    "Standards/Code Organisation/Version Control.md": {
+      "modifiedTime": 1710324382782,
+      "sourceSize": 0,
+      "exportedPath": "standards/code-organisation/version-control.html",
+      "dependencies": []
+    },
+    "Standards/Languages and Frameworks/Angular.md": {
+      "modifiedTime": 1710324382782,
+      "sourceSize": 1226,
+      "exportedPath": "standards/languages-and-frameworks/angular.html",
+      "dependencies": []
+    },
+    "Standards/Languages and Frameworks/Flutter.md": {
+      "modifiedTime": 1710324382782,
+      "sourceSize": 1202,
+      "exportedPath": "standards/languages-and-frameworks/flutter.html",
+      "dependencies": []
+    },
+    "Standards/Languages and Frameworks/Languages and Frameworks.md": {
+      "modifiedTime": 1710324382782,
+      "sourceSize": 35,
+      "exportedPath": "standards/languages-and-frameworks/languages-and-frameworks.html",
+      "dependencies": []
+    },
+    "Standards/Languages and Frameworks/NodeJs.md": {
+      "modifiedTime": 1710324382782,
+      "sourceSize": 1178,
+      "exportedPath": "standards/languages-and-frameworks/nodejs.html",
+      "dependencies": []
+    },
+    "Operational Task Breakdown and Logging.md": {
+      "modifiedTime": 1710324382782,
+      "sourceSize": 0,
+      "exportedPath": "operational-task-breakdown-and-logging.html",
+      "dependencies": []
+    },
+    "index.md": {
+      "modifiedTime": 1710324382782,
+      "sourceSize": 529,
+      "exportedPath": "index.html",
+      "dependencies": []
+    },
+    "Software Factory Objectives.md": {
+      "modifiedTime": 1710324382782,
+      "sourceSize": 1328,
+      "exportedPath": "software-factory-objectives.html",
       "dependencies": []
     }
   }

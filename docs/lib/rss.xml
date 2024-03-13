@@ -1,1 +1,691 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[notes]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://corleroux.github.io/fcsf/</link><image><url>https://corleroux.github.io/fcsf/lib/media/favicon.png</url><title>notes</title><link>https://corleroux.github.io/fcsf/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Tue, 12 Mar 2024 07:09:10 GMT</lastBuildDate><atom:link href="https://corleroux.github.io/fcsf/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Tue, 12 Mar 2024 07:09:09 GMT</pubDate><ttl>60</ttl><dc:creator/></channel></rss>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[notes]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://corleroux.github.io/fcsf/</link><image><url>https://corleroux.github.io/fcsf/lib/media/favicon.png</url><title>notes</title><link>https://corleroux.github.io/fcsf/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 13 Mar 2024 10:06:23 GMT</lastBuildDate><atom:link href="https://corleroux.github.io/fcsf/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 13 Mar 2024 10:06:22 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[Branching strategies]]></title><description><![CDATA[ 
+ <br><a data-href="Monorepo with NX" href="https://corleroux.github.io/fcsf/standards/code-organisation/monorepo-with-nx.html" class="internal-link" target="_self" rel="noopener">Monorepo with NX</a><br>
+<a data-href="GitFlow vs Trunk Based Development" href="https://corleroux.github.io/fcsf/standards/code-organisation/gitflow-vs-trunk-based-development.html" class="internal-link" target="_self" rel="noopener">GitFlow vs Trunk Based Development</a><br>
+<a data-href="Embracing Trunk Based Development" href="https://corleroux.github.io/fcsf/standards/code-organisation/embracing-trunk-based-development.html" class="internal-link" target="_self" rel="noopener">Embracing Trunk Based Development</a><br>
+<a data-href="Implementing Branching Strategies with NX" href="https://corleroux.github.io/fcsf/standards/code-organisation/implementing-branching-strategies-with-nx.html" class="internal-link" target="_self" rel="noopener">Implementing Branching Strategies with NX</a>]]></description><link>https://corleroux.github.io/fcsf/standards/code-organisation/branching-strategies.html</link><guid isPermaLink="false">Standards/Code Organisation/Branching strategies.md</guid><pubDate>Wed, 13 Mar 2024 08:50:24 GMT</pubDate></item><item><title><![CDATA[Embracing-Trunk-Based-Development]]></title><description><![CDATA[ 
+ <br><br>Trunk-Based Development (TBD) is increasingly preferred in agile and continuous delivery environments. This approach simplifies the development process, encourages collaboration, and accelerates feedback and delivery cycles. Here's why TBD is preferred and the key habits, practices, and principles developers must adhere to.<br><br>
+<br>Rapid Iteration: Allows for quicker integration, testing, and feedback, aligning with agile methodologies.
+<br>Simplified Workflow: Minimizes branching complexity, making the development process more straightforward.
+<br>Enhanced Collaboration: Encourages more frequent merges, promoting team collaboration and reducing integration issues.
+<br><br>To successfully implement Trunk-Based Development, developers should adopt certain habits and practices:<br><br>
+<br>Integrate changes frequently, at least daily, to minimize merge conflicts and identify issues early.
+<br><br>
+<br>Use feature flags to enable toggling of incomplete or experimental features without impacting the mainline.
+<br><br>
+<br>Make small, incremental changes to ensure each commit is manageable and reversible if necessary.
+<br><br>
+<br>Rely on a robust suite of automated tests to catch regressions and errors before they reach production.
+<br><br>
+<br>Implement mandatory code reviews to maintain code quality and share knowledge across the team.
+<br><br>
+<br>Regularly refactor code to maintain its quality, readability, and flexibility over time.
+<br><br>
+<br>Collaboration Over Silos: Emphasize teamwork and knowledge sharing to avoid silos of information.
+<br>Quality Over Speed: While speed is a goal, never compromise on the quality of the code and the product.
+<br>Feedback Loops: Shorten feedback loops with stakeholders, including end-users, to continually adapt and improve.
+<br>In the next section, we'll explore how NX, a powerful tool for monorepo management, can implement both GitFlow and Trunk-Based Development strategies, providing flexibility across different project needs.]]></description><link>https://corleroux.github.io/fcsf/standards/code-organisation/embracing-trunk-based-development.html</link><guid isPermaLink="false">Standards/Code Organisation/Embracing Trunk Based Development.md</guid><pubDate>Mon, 11 Mar 2024 06:38:28 GMT</pubDate></item><item><title><![CDATA[GitFlow-vs-Trunk-Based-Development]]></title><description><![CDATA[ 
+ <br><br>In modern software development, managing branches and integrating changes efficiently is crucial. Two prominent strategies for managing branches in version control systems are GitFlow and Trunk-Based Development. Understanding the differences and applications of each can significantly influence a project's success.<br><br>GitFlow is a branching model that defines a strict branching strategy designed around project releases. It involves multiple branches for different purposes, such as feature, develop, release, hotfix, and master. This approach facilitates detailed management of features and releases but can lead to complex merging and slower integration cycles.<br><br>
+<br>Well-organized branches for features, development, releases, and hotfixes.
+<br>Suited for projects requiring detailed release schedules and maintenance versions.
+<br>Involves more branches, making the workflow complex but well-structured.
+<br><br>Trunk-Based Development simplifies the branching model by encouraging developers to work in short-lived branches or directly in the trunk (mainline). This model emphasizes continuous integration and delivery, allowing for faster iterations and feedback loops.<br><br>
+<br>Minimal branching, with developers working on small changes that are merged back to the trunk frequently.
+<br>Promotes a continuous integration/continuous deployment (CI/CD) pipeline.
+<br>Suitable for agile development and rapid iteration environments.
+<br><br>
+<br>Branching Complexity: GitFlow involves more branches and can be complex, whereas Trunk-Based Development keeps branching to a minimum.
+<br>Integration Cycles: GitFlow typically results in longer integration cycles, while Trunk-Based Development allows for quicker integration and testing.
+<br>Release Management: GitFlow offers detailed control over releases, making it suitable for projects with complex release needs. Trunk-Based Development focuses on continuous delivery, ideal for fast-paced development.
+<br>In the next section, we'll delve into why Trunk-Based Development is often preferred for agile, fast-paced projects and the principles developers need to follow in this model.]]></description><link>https://corleroux.github.io/fcsf/standards/code-organisation/gitflow-vs-trunk-based-development.html</link><guid isPermaLink="false">Standards/Code Organisation/GitFlow vs Trunk Based Development.md</guid><pubDate>Mon, 11 Mar 2024 06:43:02 GMT</pubDate></item><item><title><![CDATA[Implementing-Branching-Strategies-with-NX]]></title><description><![CDATA[ 
+ <br><br>NX is a next-generation build system with first-class support for monorepos, offering powerful tools for modern development practices. It's designed to accommodate various workflows, including both GitFlow and Trunk-Based Development, making it a versatile choice for projects of any size and complexity.<br><br>NX provides structured support for GitFlow by enabling efficient management of multiple branch types, including feature branches, release branches, and hotfix branches. NX can automate tasks such as linting, testing, and building specific to each branch type, ensuring that releases are stable and well-tested.<br><br>
+<br>Branch-Specific Commands: Use NX's affected commands to run tasks only on affected projects, optimizing build and test times for each branch.
+<br>Release Management: Automate release workflows with NX to handle versioning, changelog generation, and package publishing for different branches.
+<br><br>NX excels in supporting Trunk-Based Development by facilitating continuous integration and deployment pipelines. Its powerful tooling ensures that changes can be efficiently integrated, tested, and deployed from the trunk.<br><br>
+<br>Monorepo Benefits: Leverage NX's monorepo capabilities to simplify dependency management and enforce code standards across the trunk.
+<br>Incremental Builds: Use NX's incremental build features to significantly reduce build times, making frequent integrations feasible.
+<br>Quality Gates: Implement quality gates using NX to enforce code quality checks, testing, and peer reviews before merging into the trunk.
+<br><br>While NX supports both branching strategies effectively, the choice between GitFlow and Trunk-Based Development should be guided by the project's needs, team size, and release management preferences. NX provides the tools and flexibility to adopt the best approach for your specific scenario.<br>By understanding the nuances of each strategy and leveraging NX's capabilities, teams can streamline their development process, improve collaboration, and enhance product quality regardless of the chosen workflow.]]></description><link>https://corleroux.github.io/fcsf/standards/code-organisation/implementing-branching-strategies-with-nx.html</link><guid isPermaLink="false">Standards/Code Organisation/Implementing Branching Strategies with NX.md</guid><pubDate>Mon, 11 Mar 2024 06:39:51 GMT</pubDate></item><item><title><![CDATA[Monorepo]]></title><description><![CDATA[ 
+ <br>A monorepo is a version control strategy that involves storing all of an organisation's code for different projects in a single repository, rather than splitting them across multiple repositories. This approach has been adopted by many large tech companies to manage their vast and interconnected codebases more efficiently.<br><br>
+<br>
+Simplified Dependency Management: When multiple projects are stored in a single repository, managing dependencies across these projects becomes easier. You can update a shared library and immediately see the impact across all projects that depend on it.
+
+<br>
+Unified Versioning and Releases: A monorepo makes it easier to synchronize releases across projects, ensuring compatibility and simplifying the versioning process.
+
+<br>
+Improved Code Reuse: Sharing common code across projects is more straightforward in a monorepo, reducing duplication and fostering consistency across an organization's projects.
+
+<br>
+Enhanced Collaboration and Code Review: With a single repository, it's easier for teams to collaborate across projects, streamline code review processes, and maintain a high level of code quality.
+
+<br>
+Simplified Build and Test Processes: Monorepos can leverage powerful tools to only rebuild and test affected areas of the codebase, significantly speeding up continuous integration (CI) pipelines.
+
+<br><br><a data-tooltip-position="top" aria-label="https://nx.dev/" rel="noopener" class="external-link" href="https://nx.dev/" target="_blank">NX</a> is a powerful tool designed to streamline working with monorepos, particularly for JavaScript and TypeScript projects, including Angular and Node.js applications. Here's a detailed strategy for transitioning from multiple repositories to a monorepo using NX:<br><br>
+<br>
+Audit Existing Repositories: Review each Angular and Node.js project to understand their dependencies, build processes, and configurations. This will help identify any shared dependencies that can be centralized.
+
+<br>
+Clean Up: Address any outstanding issues, remove unused code and dependencies, and ensure all tests are passing. This simplifies the migration process.
+
+<br><br>
+<br>
+Install NX: Start by installing NX globally using npm or yarn. Then, create a new NX workspace by running npx create-nx-workspace@latest yourWorkspaceName. Choose the empty preset to start with a clean slate.
+
+<br>
+Add Projects: Incrementally add your Angular and Node.js projects to the NX workspace. NX provides schematics for generating applications and libraries that adhere to best practices.
+
+<br>Use nx generate @nrwl/angular:app yourAngularAppName for Angular applications.
+<br>Use nx generate @nrwl/node:app yourNodeAppName for Node.js applications.
+
+
+<br>
+Migrate Code: For each project, move the code into the newly generated NX application or library directories. Adjust import paths and any specific configuration as necessary.
+
+<br><br>
+<br>
+Unified Dependency Management: Move all project dependencies to the workspace's root package.json. NX manages building and testing in a way that respects inter-project dependencies.
+
+<br>
+Optimize Build Configuration: Leverage NX's ability to create custom build, test, and lint configurations that can be shared across projects within the workspace.
+
+<br><br>
+<br>
+Identify Common Code: Look for any common utility functions, components, or services that can be extracted into shared libraries within the workspace.
+
+<br>
+Create Shared Libraries: Use nx generate @nrwl/workspace:lib yourLibName to create shared libraries for reusable code. Adjust your applications to import from these libraries.
+
+<br><br>
+<br>
+Integrate NX Affected Commands: Utilize NX's affected commands to optimize your CI processes. These commands allow you to only build, test, and lint the projects affected by a given change, significantly reducing build times.
+
+<br>
+GitFlow and NX: Moving to a monorepo doesn't necessarily mean you have to abandon the GitFlow deployment strategy. NX works at the project level, allowing you to continue feature branching and merging practices. However, the monorepo approach might encourage a shift towards trunk-based development, as it tends to complement the streamlined workflows that monorepos offer.
+
+<br><br>Transitioning to a monorepo using NX for Angular and Node.js projects is a strategic move that can enhance collaboration, streamline project management, and improve build efficiency. While the initial setup and migration require careful planning and execution, the long-term benefits of easier dependency management, shared code utilization, and simplified CI/CD processes can significantly outweigh the upfront effort. Adapting your deployment strategies within the monorepo context might require some adjustments, but GitFlow can still be utilized effectively with clear guidelines and practices adapted for the monorepo environment.]]></description><link>https://corleroux.github.io/fcsf/standards/code-organisation/monorepo-with-nx.html</link><guid isPermaLink="false">Standards/Code Organisation/Monorepo with NX.md</guid><pubDate>Wed, 13 Mar 2024 08:46:53 GMT</pubDate></item><item><title><![CDATA[Version Control]]></title><description><![CDATA[ 
+ ]]></description><link>https://corleroux.github.io/fcsf/standards/code-organisation/version-control.html</link><guid isPermaLink="false">Standards/Code Organisation/Version Control.md</guid><pubDate>Wed, 13 Mar 2024 10:04:57 GMT</pubDate></item><item><title><![CDATA[Angular Coding Standards]]></title><description><![CDATA[ 
+ <br><br>Angular promotes maintaining high code quality, readability, and scalability through its coding standards. Here's a summary with pointers for deeper insights.<br><br>
+<br>Project Organization: Opt for a feature-based file organization and keep the structure flat. Group related files into folders for cohesion.
+<br>Naming Practices: Adopt kebab-case for filenames and UpperCamelCase for class names. Include the object type (component, service, module, etc.) in filenames.
+<br>Component Design: Restrict component logic to UI-related aspects. Delegate business logic and data handling to services.
+<br>Angular CLI Utilization: Leverage Angular CLI for code generation, project building, and deployment to enhance development efficiency and consistency.
+<br>Adherence to TypeScript: Embrace TypeScript best practices. Prefer let and const for variable declarations, specify types, and use modern ES6/ES2015 features for cleaner syntax.
+<br><br>For comprehensive guidelines, explore the <a data-tooltip-position="top" aria-label="https://angular.io/guide/styleguide" rel="noopener" class="external-link" href="https://angular.io/guide/styleguide" target="_blank">Angular Style Guide</a>.]]></description><link>https://corleroux.github.io/fcsf/standards/languages-and-frameworks/angular.html</link><guid isPermaLink="false">Standards/Languages and Frameworks/Angular.md</guid><pubDate>Wed, 13 Mar 2024 08:25:37 GMT</pubDate></item><item><title><![CDATA[Flutter Coding Standards]]></title><description><![CDATA[ 
+ <br><br>Flutter emphasizes code readability, maintainability, UI consistency, and performance. Below are the coding standards for Dart and Flutter development.<br><br>
+<br>Code Formatting: Ensure code consistency with dartfmt for automatic formatting.
+<br>Naming Conventions: Stick to lowerCamelCase for variables, methods, and local variables. Use UpperCamelCase for classes, enums, typedefs, and type parameters.
+<br>State Management: Select a state management solution (Provider, Bloc, Redux, etc.) that aligns with your app complexity and team expertise.
+<br>Widget Guidelines: Craft widgets that are compact and dedicated to a singular function, enhancing reusability and readability.
+<br>Asynchronous Operations: Utilize Dart's async and await keywords for managing asynchronous tasks, ensuring a responsive UI.
+<br><br>
+<br>For Dart coding practices, review <a data-tooltip-position="top" aria-label="https://dart.dev/guides/language/effective-dart/style" rel="noopener" class="external-link" href="https://dart.dev/guides/language/effective-dart/style" target="_blank">Effective Dart: Style</a>.
+<br>For Flutter-specific guidelines, consult the <a data-tooltip-position="top" aria-label="https://flutter.dev/docs" rel="noopener" class="external-link" href="https://flutter.dev/docs" target="_blank">Flutter documentation</a>.
+]]></description><link>https://corleroux.github.io/fcsf/standards/languages-and-frameworks/flutter.html</link><guid isPermaLink="false">Standards/Languages and Frameworks/Flutter.md</guid><pubDate>Mon, 11 Mar 2024 06:20:25 GMT</pubDate></item><item><title><![CDATA[Languages and Frameworks]]></title><description><![CDATA[ 
+ <br><a data-href="Angular" href="https://corleroux.github.io/fcsf/standards/languages-and-frameworks/angular.html" class="internal-link" target="_self" rel="noopener">Angular</a><br>
+<a data-href="Flutter" href="https://corleroux.github.io/fcsf/standards/languages-and-frameworks/flutter.html" class="internal-link" target="_self" rel="noopener">Flutter</a><br>
+<a data-href="NodeJs" href="https://corleroux.github.io/fcsf/standards/languages-and-frameworks/nodejs.html" class="internal-link" target="_self" rel="noopener">NodeJs</a>]]></description><link>https://corleroux.github.io/fcsf/standards/languages-and-frameworks/languages-and-frameworks.html</link><guid isPermaLink="false">Standards/Languages and Frameworks/Languages and Frameworks.md</guid><pubDate>Wed, 13 Mar 2024 08:28:26 GMT</pubDate></item><item><title><![CDATA[Node.js Coding Standards]]></title><description><![CDATA[ 
+ <br><br>Node.js standards target efficiency, security, and maintainability in backend development, focusing on performance and safe operations.<br><br>
+<br>Asynchronous Patterns: Prefer async/await for cleaner and more manageable asynchronous code. Avoid the pitfalls of callback hell.
+<br>Error Management: Implement a unified error handling mechanism to enhance application reliability and maintainability.
+<br>Code Organization: Structure your code around features or components in a modular fashion to support growth and scalability.
+<br>Security Measures: Adopt security best practices including input validation, enforcing HTTPS, dependency management, and secure error handling.
+<br>Optimizing Performance: Utilize streams for processing large datasets and employ caching for quick access to frequently requested data.
+<br><br>Refer to the <a data-tooltip-position="top" aria-label="https://github.com/goldbergyoni/nodebestpractices" rel="noopener" class="external-link" href="https://github.com/goldbergyoni/nodebestpractices" target="_blank">Node.js Best Practices</a> GitHub repository for an extensive list of practices and standards in Node.js development.]]></description><link>https://corleroux.github.io/fcsf/standards/languages-and-frameworks/nodejs.html</link><guid isPermaLink="false">Standards/Languages and Frameworks/NodeJs.md</guid><pubDate>Mon, 11 Mar 2024 06:21:15 GMT</pubDate></item><item><title><![CDATA[Operational Task Breakdown and Logging]]></title><description><![CDATA[ 
+ ]]></description><link>https://corleroux.github.io/fcsf/operational-task-breakdown-and-logging.html</link><guid isPermaLink="false">Operational Task Breakdown and Logging.md</guid><pubDate>Wed, 13 Mar 2024 10:04:13 GMT</pubDate></item><item><title><![CDATA[Software Factory Index]]></title><description><![CDATA[ 
+ <br><br>
+<br><a data-tooltip-position="top" aria-label="Software Factory Objectives" data-href="Software Factory Objectives" href="https://corleroux.github.io/fcsf/software-factory-objectives.html" class="internal-link" target="_self" rel="noopener">Define Software Factory Objectives</a>
+<br>Risk Management Planning
+<br><a data-tooltip-position="top" aria-label="Roles" data-href="Roles" href="https://corleroux.github.io/fcsf/roles/roles.html" class="internal-link" target="_self" rel="noopener">Roles within the Software Factory team</a>
+<br><a data-href="Operational Task Breakdown and Logging" href="https://corleroux.github.io/fcsf/operational-task-breakdown-and-logging.html" class="internal-link" target="_self" rel="noopener">Operational Task Breakdown and Logging</a>
+<br>Knowledge Management System Setup
+<br>Metrics Creation for Knowledge Management
+<br>Measurement of Project and Process Metrics
+<br>Training and Adoption
+<br>Review and Continuous Improvement
+]]></description><link>https://corleroux.github.io/fcsf/index.html</link><guid isPermaLink="false">index.md</guid><pubDate>Wed, 13 Mar 2024 10:05:42 GMT</pubDate></item><item><title><![CDATA[Software Factory Objectives]]></title><description><![CDATA[ 
+ <br><br>
+<br>Core Values and Goals
+
+<br>Falcorp values and Goals
+
+
+<br>Core Objectives
+
+<br>Efficiency
+<br>Quality
+<br>Scalability
+<br>Adaptability.
+
+
+<br><br>
+<br>Analyze competitors and industry standards to ensure your objectives are ambitious yet achievable.
+<br>Identify any unique value propositions your software factory can offer.
+<br><br>
+<br>Clearly document the defined objectives.
+<br>Clearly document standards
+
+<br><a data-tooltip-position="top" aria-label="NodeJs" data-href="NodeJs" href="https://corleroux.github.io/fcsf/standards/languages-and-frameworks/nodejs.html" class="internal-link" target="_self" rel="noopener">NodeJs</a>
+<br><a data-tooltip-position="top" aria-label="Angular" data-href="Angular" href="https://corleroux.github.io/fcsf/standards/languages-and-frameworks/angular.html" class="internal-link" target="_self" rel="noopener">Angular</a>
+<br><a data-tooltip-position="top" aria-label="Flutter" data-href="Flutter" href="https://corleroux.github.io/fcsf/standards/languages-and-frameworks/flutter.html" class="internal-link" target="_self" rel="noopener">Flutter</a>
+<br><a data-href="Branching strategies" href="https://corleroux.github.io/fcsf/standards/code-organisation/branching-strategies.html" class="internal-link" target="_self" rel="noopener">Branching strategies</a>
+
+
+<br>Ensure the documentation is accessible and understandable by all team members and stakeholders.
+<br><br>
+<br>Create a process for ongoing feedback on the defined objectives.
+<br>Iterate and refine objectives based on new insights or changes in the business environment.
+<br>Alignment with Technology and Processes
+<br>Chosen technologies and development processes must align with the defined objectives.
+<br>Flexibility to adapt to new technologies and methodologies in the future.
+<br><br>
+<br>Training and informational sessions with all relevant stakeholders to ensure everyone is on the same page.
+]]></description><link>https://corleroux.github.io/fcsf/software-factory-objectives.html</link><guid isPermaLink="false">Software Factory Objectives.md</guid><pubDate>Wed, 13 Mar 2024 10:05:54 GMT</pubDate></item><item><title><![CDATA[Backend Developer]]></title><description><![CDATA[ 
+ <br><br><br><br>
+<br>API Development: Design and implement RESTful APIs.
+<br>Database Management: Handle database design, optimization, and maintenance.
+<br>Integration: Collaborate with frontend developers to ensure smooth integration.
+<br><br>
+<br>Develop and test backend logic.
+<br>Optimize application for maximum speed and efficiency.
+<br>Ensure security and data protection standards are met.
+<br><br>
+<br>Continuous Improvement: Engage in activities for personal and professional growth.
+<br>Stakeholder Communication: Communicate effectively with team leads and stakeholders as necessary.
+<br>Stay Informed: Keep up with new backend technologies and methodologies that could benefit the project.
+<br>Emergency Support: Be prepared to tackle urgent issues or critical bug fixes as they arise.
+<br><br><br>
+<br>Participate in Sprint Planning: Engage in the planning process to understand sprint goals and backend tasks.
+<br>Task Selection: Select tasks based on skills, interest, and team needs.
+<br>Estimate Work: Contribute to effort estimation for selected backend tasks.
+<br><br>
+<br>Implement Features: Develop backend features and services as per sprint tasks.
+<br>Write Clean Code: Focus on writing clean, efficient, and maintainable code.
+<br>Unit Testing: Create and execute unit tests to ensure code quality and functionality.
+<br>Collaborate with Peers: Work closely with other backend developers and cross-functional teams for integration.
+<br><br>
+<br>Bug Fixing: Identify and resolve bugs found during testing or reported by QA.
+<br>Optimize Performance: Work on optimizing code and database queries for better performance.
+<br>Code Reviews: Participate in code review sessions, providing and receiving constructive feedback.
+<br>Prepare for Demonstration: Finalize all backend tasks and assist in preparing for the Sprint Review.
+<br><br>
+<br>Sprint Review Participation: Contribute to the backend presentation during the Sprint Review.
+<br>Feedback Incorporation: Take note of feedback for future sprints and continuous improvement.
+<br>Sprint Retrospective: Actively participate in the retrospective to share insights and suggest improvements.
+<br><br>
+<br>Quality and reliability of the backend services.
+<br>Timeliness of completing assigned tasks.
+<br>Contribution to improving system performance and scalability.
+]]></description><link>https://corleroux.github.io/fcsf/roles/backenddeveloper.html</link><guid isPermaLink="false">Roles/BackendDeveloper.md</guid><pubDate>Wed, 13 Mar 2024 09:32:48 GMT</pubDate></item><item><title><![CDATA[Backend Team Lead]]></title><description><![CDATA[ 
+ <br><br><br><br>
+<br>Team Leadership and Management: Oversee backend development activities, ensuring alignment with project goals.
+<br>Architecture Design: Lead the design of server-side architecture and database schemas.
+<br>Code Quality and Review: Ensure the backend codebase is optimized and maintainable.
+<br>Inter-Team Coordination: Work closely with frontend and DevOps teams to ensure seamless integration.
+<br><br>
+<br>Plan and distribute backend development tasks.
+<br>Review pull requests and maintain code quality standards.
+<br>Guide the team in implementing robust and scalable services.
+<br><br>
+<br>Leadership and Mentoring: Provide leadership and mentorship to backend developers, fostering skill development.
+<br>Continuous Learning: Encourage the team to stay updated with the latest backend technologies and practices.
+<br>Risk Management: Identify and mitigate risks associated with backend development.
+<br>Emergency Handling: Be ready to address urgent issues or bugs in the backend system.
+<br><br><br>
+<br>Lead Backend Planning: Direct the backend team in task selection and estimation for the sprint.
+<br>Coordinate with Other Leads: Work with leads from other teams to ensure backend tasks align with overall project goals.
+<br>Define Technical Architecture: Propose and refine the technical architecture for new features or improvements.
+<br>Resource Allocation: Allocate resources and developers to tasks based on skills and workload.
+<br><br>
+<br>Supervise Development: Monitor the backend team's progress, providing technical guidance and support.
+<br>Code Review Sessions: Conduct code reviews to maintain high code quality and adherence to best practices.
+<br>Problem-Solving: Help the team in solving complex technical challenges.
+<br>Cross-Team Collaboration: Facilitate communication and collaboration with frontend and DevOps teams.
+<br><br>
+<br>Feature Completion: Ensure that all backend features are complete and meet predefined criteria.
+<br>Performance Tuning: Oversee efforts to optimize application performance and scalability.
+<br>Integration Support: Support integration testing and troubleshooting with frontend and DevOps teams.
+<br>Prepare for Sprint Review: Organize backend contributions for demonstration during the Sprint Review.
+<br><br>
+<br>Showcase Backend Work: Present the backend team's achievements during the Sprint Review to stakeholders.
+<br>Collect Feedback: Gather feedback from stakeholders and team members to identify improvement areas.
+<br>Lead Backend Retrospective: Facilitate a retrospective for the backend team to discuss successes and challenges.
+<br>Implement Improvements: Work with the team to plan and implement strategies for continuous improvement.
+<br><br>
+<br>Stability and performance of the backend systems.
+<br>Adherence to development timelines and sprint goals.
+<br>Team productivity and efficiency.
+]]></description><link>https://corleroux.github.io/fcsf/roles/backendteamlead.html</link><guid isPermaLink="false">Roles/BackendTeamLead.md</guid><pubDate>Wed, 13 Mar 2024 09:34:16 GMT</pubDate></item><item><title><![CDATA[Business Analyst]]></title><description><![CDATA[ 
+ <br><br><br><br>
+<br>Requirements Gathering: Collaborate with stakeholders to gather and document requirements for Flutter mobile app features and improvements.
+<br>Analysis and Documentation: Analyze business needs and document detailed requirements for the development team.
+<br>User Stories and Acceptance Criteria: Create user stories and define acceptance criteria to guide the development of new features.
+<br><br>
+<br>Conduct interviews, surveys, and workshop sessions with stakeholders to identify business needs.
+<br>Create diagrams and models to visualize and communicate requirements.
+<br>Participate in backlog refinement sessions, contributing to the prioritization of features and improvements.
+<br><br>
+<br>Collaboration: Work closely with the development team to clarify requirements and resolve any ambiguities.
+<br>Validation: Validate developed features against the defined requirements and acceptance criteria.
+<br>Feedback Collection: Gather feedback from users and stakeholders to inform future development efforts.
+<br><br><br>
+<br>Participate in Sprint Planning: Contribute to the planning discussions, providing insights into the business requirements.
+<br>Define Sprint Goals: Help define the sprint goals, ensuring alignment with business objectives.
+<br><br>
+<br>Support Development: Be available to the development team for any questions or clarifications regarding requirements.
+<br>Update Documentation: Keep all requirement documents and user stories up to date as the sprint progresses.
+<br><br>
+<br>Validate Features: Work with the QA team to ensure features developed during the sprint meet the acceptance criteria.
+<br>Prepare for the Review: Help prepare materials and documentation for the sprint review meeting.
+<br><br>
+<br>Participate in Sprint Review: Present the work done from a BA perspective, highlighting how the delivered features meet the business requirements.
+<br>Sprint Retrospective: Contribute to the retrospective by providing feedback on the requirements gathering and documentation process.
+<br><br>
+<br>Quality and clarity of requirements documentation.
+<br>Contribution to the successful delivery of sprint goals.
+<br>Effectiveness in stakeholder communication and feedback integration.
+]]></description><link>https://corleroux.github.io/fcsf/roles/businessanalyst.html</link><guid isPermaLink="false">Roles/BusinessAnalyst.md</guid><pubDate>Wed, 13 Mar 2024 09:52:23 GMT</pubDate></item><item><title><![CDATA[Business Analyst Team Lead]]></title><description><![CDATA[ 
+ <br><br><br><br>
+<br>Strategic Planning and Analysis: Lead the strategic planning sessions, focusing on identifying and analyzing new features and improvements for the Flutter mobile applications.
+<br>Requirements Gathering and Documentation: Ensure accurate gathering and documentation of user and system requirements for mobile app development.
+<br>Team Coordination: Coordinate activities of the BA team, ensuring effective communication and collaboration with the Flutter development team and other stakeholders.
+<br>Stakeholder Management: Act as the primary liaison between the project stakeholders and the development team, translating business needs into technical requirements.
+<br><br>
+<br>Facilitate requirement elicitation sessions to identify business needs for the Flutter applications.
+<br>Review and validate the gathered requirements for clarity, completeness, and consistency.
+<br>Lead the prioritization of feature development based on business value and technical feasibility.
+<br><br>
+<br>Leadership: Provide guidance and mentorship to the BA team, fostering a collaborative environment.
+<br>Quality Assurance: Oversee the quality of requirements, ensuring they meet the project standards and objectives.
+<br>Change Management: Manage changes to requirements through a structured change management process.
+<br><br><br>
+<br>Lead BA Planning: Guide the BA team in aligning on the sprint's objectives and deliverables.
+<br>Collaborate on Backlog Refinement: Work with the Product Owner and development team to refine the product backlog, ensuring clarity and readiness for development.
+<br><br>
+<br>Monitor Progress: Ensure the BA team's activities align with the sprint goals and timelines.
+<br>Facilitate Communication: Act as the main point of contact for any requirements-related queries from the development team.
+<br><br>
+<br>Review Deliverables: Validate that the sprint deliverables meet the predefined requirements and are ready for the sprint review.
+<br>Prepare Documentation: Ensure all documentation is up to date and ready for stakeholder review.
+<br><br>
+<br>Present BA Work: Highlight the achievements and learnings of the BA team during the sprint review.
+<br>Lead BA Retrospective: Facilitate a retrospective focused on continuous improvement within the BA processes and activities.
+<br><br>
+<br>Accuracy and completeness of requirements documentation.
+<br>Stakeholder satisfaction with the BA team's contributions.
+<br>Efficiency of the requirements gathering and validation process.
+]]></description><link>https://corleroux.github.io/fcsf/roles/businessanalystteamlead.html</link><guid isPermaLink="false">Roles/BusinessAnalystTeamLead.md</guid><pubDate>Wed, 13 Mar 2024 09:52:10 GMT</pubDate></item><item><title><![CDATA[Development Manager Activities]]></title><description><![CDATA[ 
+ <br><br><br><br>
+<br>Technical Leadership: Provide direction and support for all development activities.
+<br>Resource Management: Allocate and manage resources efficiently to meet project deadlines.
+<br>Mentorship and Development: Invest in the growth and development of team members.
+<br>Quality Assurance: Oversee the implementation of best practices and quality standards.
+<br><br>
+<br>Develop technical aspects of the company’s strategy to ensure alignment with its business goals.
+<br>Supervise system infrastructure to ensure functionality and efficiency.
+<br>Build quality assurance and data protection processes.
+<br><br>
+<br>Project Oversight: Monitor project progress and address any issues that arise.
+<br>Stakeholder Communication: Keep stakeholders informed about project status and challenges.
+<br>Innovation and Research: Promote and lead initiatives to incorporate new technologies and methodologies to improve project outcomes.
+<br>Risk Management: Identify and mitigate risks associated with software development.
+<br><br><br>
+<br>Project Planning Oversight: Ensure that the planning phase is aligned with project objectives and resource availability.
+<br>Technical Guidance: Provide technical guidance and insight during the planning phase.
+<br><br>
+<br>Monitor Development Progress: Keep track of the development progress and intervene when necessary to keep the project on track.
+<br>Technical Problem Solving: Assist in solving technical problems that the team encounters during the sprint.
+<br><br>
+<br>Review Preparation: Oversee the preparation for the sprint review, ensuring that all deliverables are ready for demonstration.
+<br>Process Improvement: Participate in the retrospective to identify and plan for improvements in the development process.
+<br><br>
+<br>Project delivery timelines and adherence to schedules.
+<br>Quality metrics, including bug and defect rates.
+<br>Team productivity and efficiency improvements.
+]]></description><link>https://corleroux.github.io/fcsf/roles/devmanager.html</link><guid isPermaLink="false">Roles/DevManager.md</guid><pubDate>Wed, 13 Mar 2024 09:55:41 GMT</pubDate></item><item><title><![CDATA[DevOps Engineer]]></title><description><![CDATA[ 
+ <br><br><br><br>
+<br>Automation: Implement automation tools and scripts to streamline operations.
+<br>Deployment and Monitoring: Deploy updates and fixes, monitor system performance.
+<br>Troubleshooting and Support: Provide technical support and resolve issues related to the CI/CD pipeline and infrastructure.
+<br><br>
+<br>Manage code deployments, fixes, updates, and related processes.
+<br>Build and maintain tools for deployment, monitoring, and operations.
+<br>Troubleshoot and resolve issues in dev, test, and production environments.
+<br><br>
+<br>Professional Development: Engage in learning to improve skills in cloud services, automation, and security.
+<br>Collaboration: Work closely with team leads and other teams to ensure a cohesive workflow.
+<br>Proactive Problem-Solving: Address potential issues with infrastructure or deployments before they escalate.
+<br>Emergency Support: Be ready to respond to urgent issues related to infrastructure or deployments.
+<br><br><br>
+<br>Participate in Sprint Planning: Understand the goals for DevOps in the upcoming sprint.
+<br>Select Tasks: Choose tasks that align with sprint goals and personal expertise.
+<br>Contribute to Infrastructure Planning: Provide insights on infrastructure needs and improvements.
+<br><br>
+<br>Maintain CI/CD Pipelines: Work on continuous integration/continuous deployment pipelines for smooth operations.
+<br>Infrastructure Setup and Maintenance: Configure and manage cloud resources, servers, and services.
+<br>Implement Automation: Develop scripts and tools to automate development and operational tasks.
+<br>Support Development Teams: Assist with environment setups, deployments, and address technical issues.
+<br><br>
+<br>System Monitoring: Monitor applications and infrastructure to identify and address issues.
+<br>Optimize Performance: Contribute to efforts in optimizing system performance and scalability.
+<br>Enhance Security: Apply security patches, conduct vulnerability assessments, and ensure compliance.
+<br>Preparation for Sprint Review: Finalize tasks and assist in preparing DevOps achievements for demonstration.
+<br><br>
+<br>Sprint Review Participation: Support the presentation of DevOps work during the Sprint Review.
+<br>Incorporate Feedback: Take note of feedback for future improvement.
+<br>Active Retrospective Participation: Share experiences and suggest improvements for DevOps practices.
+<br><br>
+<br>Success rate of deployments and rollbacks.
+<br>Time to detect and resolve infrastructure issues.
+<br>Contributions to improving deployment frequency and stability.
+]]></description><link>https://corleroux.github.io/fcsf/roles/devopsengineer.html</link><guid isPermaLink="false">Roles/DevOpsEngineer.md</guid><pubDate>Wed, 13 Mar 2024 09:35:57 GMT</pubDate></item><item><title><![CDATA[DevOps Team Lead]]></title><description><![CDATA[ 
+ <br><br><br><br>
+<br>Infrastructure Management: Oversee the management and optimization of servers, databases, and other infrastructure.
+<br>CI/CD Pipeline: Develop and maintain continuous integration and delivery pipelines.
+<br>Monitoring and Security: Implement monitoring solutions and ensure the security of the infrastructure.
+<br><br>
+<br>Lead the planning and implementation of DevOps strategies.
+<br>Collaborate with development teams to streamline deployment processes.
+<br>Conduct security audits and enforce compliance with security policies.
+<br><br>
+<br>Leadership and Mentoring: Provide leadership and guidance to DevOps engineers, fostering skill development.
+<br>Innovation: Encourage the exploration of new technologies and practices that can enhance efficiency and security.
+<br>Risk Management: Proactively manage risks associated with infrastructure and deployments.
+<br>Emergency Response: Lead the response to any critical infrastructure issues or incidents.
+<br><br><br>
+<br>Lead DevOps Planning: Guide the DevOps team in understanding sprint goals and selecting relevant tasks.
+<br>Infrastructure Planning: Plan and discuss infrastructure changes or improvements needed for the sprint.
+<br>Coordinate with Other Teams: Ensure DevOps tasks align with the needs of development and operations teams.
+<br><br>
+<br>Supervise CI/CD Pipeline: Oversee the maintenance and improvement of continuous integration/continuous deployment pipelines.
+<br>Infrastructure Management: Manage cloud resources, servers, and services to ensure stability and efficiency.
+<br>Automation and Tooling: Implement automation scripts and tools to streamline development and operational processes.
+<br>Collaboration and Support: Provide support to development teams for environment setup, deployments, and troubleshooting.
+<br><br>
+<br>System Monitoring: Oversee the monitoring of systems to ensure performance and reliability.
+<br>Performance Optimization: Lead efforts to optimize infrastructure for scalability and efficiency.
+<br>Security Assessments: Conduct security reviews and ensure adherence to best practices and compliance standards.
+<br>Prepare for Sprint Review: Organize DevOps contributions and prepare for demonstration during the Sprint Review.
+<br><br>
+<br>Showcase DevOps Achievements: Present the DevOps team's work during the Sprint Review to stakeholders.
+<br>Collect Feedback: Gather feedback from the team and stakeholders to identify improvement areas.
+<br>Lead DevOps Retrospective: Facilitate a retrospective focused on DevOps practices and processes.
+<br>Implement Improvements: Plan and implement changes based on retrospective outcomes.
+<br><br>
+<br>Efficiency of deployment processes.
+<br>Uptime and reliability of the production environment.
+<br>Response time to incidents and outages.
+]]></description><link>https://corleroux.github.io/fcsf/roles/devopsteamlead.html</link><guid isPermaLink="false">Roles/DevOpsTeamLead.md</guid><pubDate>Wed, 13 Mar 2024 09:36:53 GMT</pubDate></item><item><title><![CDATA[Flutter Developer]]></title><description><![CDATA[ 
+ <br><br><br><br>
+<br>Development and Implementation: Develop responsive and user-friendly mobile applications using Flutter.
+<br>Testing and Debugging: Identify and resolve issues within Flutter applications to ensure optimal performance.
+<br>Continuous Learning: Stay updated with the latest Flutter technologies and best practices.
+<br><br>
+<br>Write efficient and reusable Dart code and libraries for future use.
+<br>Ensure the technical feasibility of UI/UX designs within Flutter applications.
+<br>Optimize applications for maximum speed and scalability, focusing on mobile performance.
+<br><br>
+<br>Technical Debt Management: Refactor Dart code, address technical debt, and improve Flutter app quality.
+<br>Bug Fixes and Troubleshooting: Resolve issues that arise during the development of Flutter applications.
+<br>Documentation: Update technical documentation specific to Flutter development for better knowledge sharing.
+<br>Research and Learning: Explore new technologies and frameworks beneficial to Flutter projects.
+<br>Integration and Testing: Collaborate on integration tests and conduct thorough testing for reliability of Flutter apps.
+<br>Deployment Activities: Assist with deployment to various environments, coordinate mobile app releases.
+<br>Meetings and Collaboration: Participate in project-related meetings, collaborate effectively within the mobile team.
+<br>Support and Maintenance: Provide support for Flutter applications, address issues in production or staging environments.
+<br>Performance Optimization: Address inefficiencies within Flutter applications for better performance.
+<br>Emergency Response: Handle urgent development issues such as critical bugs or security vulnerabilities in Flutter apps.
+<br><br><br>
+<br>Attend Sprint Planning Meeting: Gain a clear understanding of goals for the upcoming sprint within the mobile team.
+<br>Select User Stories and Tasks: Choose tasks involving Flutter development collaboratively.
+<br>Discuss Requirements: Clarify requirements with the Product Owner, focusing on mobile app development with Flutter.
+<br>Estimate Tasks: Provide estimates for the effort required for each Flutter development task.
+<br><br>
+<br>Implement Features: Work on features for mobile applications using Flutter.
+<br>Write Code: Utilize Dart and Flutter frameworks for developing features.
+<br>UI Components: Update or create UI components and layouts according to design specifications.
+<br>Integrate Front-End and Back-End: Ensure smooth integration between mobile front-end developed with Flutter and back-end services.
+<br>Testing and Code Reviews: Conduct thorough testing and participate in code reviews to ensure the quality of Flutter apps.
+<br>Daily Scrum Meetings: Report progress and discuss any issues encountered in Flutter development.
+<br>Seek Clarification: Ensure that all requirements for Flutter app development are well understood and met.
+<br><br>
+<br>Finalize Features: Complete implementation of mobile app features using Flutter.
+<br>Bug Fixing: Identify and address bugs or issues within Flutter apps.
+<br>Optimize Performance: Focus on compatibility and performance optimization for Flutter applications.
+<br>Address Feedback: Implement any feedback or changes requested by stakeholders for Flutter apps.
+<br>Prepare for Sprint Review: Ensure that all work related to Flutter development meets acceptance criteria.
+<br><br>
+<br>Sprint Review Meeting: Showcase completed features of Flutter applications to stakeholders.
+<br>Gather Feedback: Engage in discussions to gather feedback and identify improvements for future sprints.
+<br>Sprint Retrospective Meeting: Reflect on the sprint process within the Flutter development team, identifying areas for improvement.
+<br>Enhance Collaboration: Offer suggestions to improve team productivity and effectiveness in Flutter app development.
+<br><br>
+<br>Efficiency and quality of features implemented in Flutter applications.
+<br>Number of bugs identified and resolved within Flutter projects.
+<br>Engagement and proactiveness in adopting new technologies and best practices in Flutter development.
+]]></description><link>https://corleroux.github.io/fcsf/roles/flutterdeveloper.html</link><guid isPermaLink="false">Roles/FlutterDeveloper.md</guid><pubDate>Wed, 13 Mar 2024 09:47:39 GMT</pubDate></item><item><title><![CDATA[Flutter Team Lead Activities]]></title><description><![CDATA[ 
+ <br><br><br><br>
+<br>Project Planning and Management: Schedule tasks, manage timelines, and ensure resource availability for Flutter projects.
+<br>Technical Oversight: Guide architectural decisions specific to Flutter and review Dart code to maintain high standards.
+<br>Mentorship: Develop the technical and professional skills of Flutter developers.
+<br>Collaboration and Communication: Facilitate communication within the mobile team and with other departments focusing on Flutter integration.
+<br><br>
+<br>Assign Flutter development tasks considering team members' skills and project requirements.
+<br>Conduct code reviews for Dart code and provide feedback to ensure adherence to Flutter best practices.
+<br>Lead discussions on implementing new Flutter features or frameworks.
+<br><br>
+<br>Technical Leadership: Provide direction and mentorship to the mobile development team focusing on Flutter.
+<br>Continuous Improvement: Promote practices for enhancing code quality, performance, and efficiency within Flutter projects.
+<br>Innovation and Research: Encourage the exploration of new Flutter technologies, tools, and practices beneficial to the project.
+<br>Stakeholder Management: Effectively communicate with stakeholders to manage expectations and report on the mobile team's progress.
+<br>Risk Management: Identify and mitigate risks related to mobile development using Flutter.
+<br>Emergency Response: Lead the response to urgent issues affecting the mobile applications developed with Flutter.
+<br><br><br>
+<br>Lead Mobile Planning: Guide the team in selecting Flutter tasks and stories for the sprint.
+<br>Define Sprint Goals: Collaborate with the Dev Manager and Scrum Master to set clear goals for mobile development.
+<br>Estimate Tasks: Facilitate estimation sessions for Flutter tasks with the team.
+<br>Align with Overall Project Goals: Ensure mobile plans align with broader project objectives and timelines.
+<br><br>
+<br>Supervise Development: Monitor progress on Flutter tasks, providing technical guidance and support.
+<br>Code Reviews: Lead Dart code review sessions to maintain quality and standards.
+<br>Facilitate Collaboration: Encourage effective collaboration between mobile and backend teams, focusing on Flutter integration.
+<br>Address Blockers: Resolve impediments affecting the mobile team's progress.
+<br><br>
+<br>Finalize Features: Ensure all mobile features developed with Flutter are completed and meet quality standards.
+<br>Performance Optimization: Oversee efforts to optimize the performance of mobile applications.
+<br>Prepare for Demonstrations: Coordinate with the team to prepare for the Sprint Review meeting.
+<br>Gather Team Feedback: Collect feedback on sprint challenges and achievements within the Flutter team.
+<br><br>
+<br>Present Mobile Work: Lead the presentation of completed mobile work during the Sprint Review.
+<br>Stakeholder Feedback: Discuss feedback from stakeholders on mobile deliverables.
+<br>Lead Mobile Retrospective: Conduct a session focused on the mobile team to identify improvement areas.
+<br>Collaborate on Improvement Plans: Implement changes based on retrospective outcomes with the Scrum Master.
+<br><br>
+<br>Completion rate of mobile development tasks against deadlines.
+<br>Quality of the mobile application's user experience developed with Flutter.
+<br>Team satisfaction and growth in Flutter expertise.
+]]></description><link>https://corleroux.github.io/fcsf/roles/flutterteamlead.html</link><guid isPermaLink="false">Roles/FlutterTeamLead.md</guid><pubDate>Wed, 13 Mar 2024 09:47:23 GMT</pubDate></item><item><title><![CDATA[Roles and Responsibilities Allocation]]></title><description><![CDATA[ 
+ <br>
+<br><a data-href="DevManager" href="https://corleroux.github.io/fcsf/roles/devmanager.html" class="internal-link" target="_self" rel="noopener">DevManager</a>
+<br><a data-href="ScrumMaster" href="https://corleroux.github.io/fcsf/roles/scrummaster.html" class="internal-link" target="_self" rel="noopener">ScrumMaster</a>
+<br><a data-href="BusinessAnalystTeamLead" href="https://corleroux.github.io/fcsf/roles/businessanalystteamlead.html" class="internal-link" target="_self" rel="noopener">BusinessAnalystTeamLead</a>
+<br><a data-href="BusinessAnalyst" href="https://corleroux.github.io/fcsf/roles/businessanalyst.html" class="internal-link" target="_self" rel="noopener">BusinessAnalyst</a>
+<br><a data-href="FlutterTeamLead" href="https://corleroux.github.io/fcsf/roles/flutterteamlead.html" class="internal-link" target="_self" rel="noopener">FlutterTeamLead</a>
+<br><a data-href="FlutterDeveloper" href="https://corleroux.github.io/fcsf/roles/flutterdeveloper.html" class="internal-link" target="_self" rel="noopener">FlutterDeveloper</a>
+<br><a data-href="WebTeamLead" href="https://corleroux.github.io/fcsf/roles/webteamlead.html" class="internal-link" target="_self" rel="noopener">WebTeamLead</a>
+<br><a data-href="WebDeveloper" href="https://corleroux.github.io/fcsf/roles/webdeveloper.html" class="internal-link" target="_self" rel="noopener">WebDeveloper</a>
+<br><a data-href="BackendTeamLead" href="https://corleroux.github.io/fcsf/roles/backendteamlead.html" class="internal-link" target="_self" rel="noopener">BackendTeamLead</a>
+<br><a data-href="BackendDeveloper" href="https://corleroux.github.io/fcsf/roles/backenddeveloper.html" class="internal-link" target="_self" rel="noopener">BackendDeveloper</a>
+<br><a data-href="DevOpsTeamLead" href="https://corleroux.github.io/fcsf/roles/devopsteamlead.html" class="internal-link" target="_self" rel="noopener">DevOpsTeamLead</a>
+<br><a data-href="DevOpsEngineer" href="https://corleroux.github.io/fcsf/roles/devopsengineer.html" class="internal-link" target="_self" rel="noopener">DevOpsEngineer</a>
+<br>X]]></description><link>https://corleroux.github.io/fcsf/roles/roles.html</link><guid isPermaLink="false">Roles/Roles.md</guid><pubDate>Wed, 13 Mar 2024 09:57:07 GMT</pubDate></item><item><title><![CDATA[Scrum Master Activities]]></title><description><![CDATA[ 
+ <br><br><br><br>
+<br>Facilitate Scrum Ceremonies: Organize and moderate daily stand-ups, sprint planning, reviews, and retrospectives.
+<br>Impediment Removal: Proactively identify and remove obstacles that hinder team progress.
+<br>Coach and Mentor: Offer guidance to the team on Agile and Scrum practices, encouraging self-organization and cross-functionality.
+<br>Communication and Reporting: Ensure clear communication channels within the team and with stakeholders. Maintain and update Agile tracking systems for transparency.
+<br><br>
+<br>Prepare and facilitate sprint planning sessions to outline the sprint's goals and select user stories.
+<br>Conduct daily stand-up meetings to monitor progress and address any impediments.
+<br>Coordinate sprint reviews to demonstrate completed work to stakeholders.
+<br>Lead sprint retrospectives to identify areas for continuous improvement.
+<br><br>
+<br>Scrum Implementation: Ensure the Scrum framework is correctly applied and followed.
+<br>Team Dynamics: Monitor and support the development of positive team dynamics.
+<br>Stakeholder Engagement: Act as a liaison between the development team and stakeholders, managing expectations.
+<br>Agile Advocacy: Promote Agile values and principles within the organization.
+<br><br><br>
+<br>Sprint Goal Definition: Collaborate with the Product Owner and the team to define the sprint goals.
+<br>Backlog Refinement: Assist in backlog grooming and prioritization for sprint planning.
+<br>Capacity Planning: Help the team assess their capacity for the sprint.
+<br><br>
+<br>Daily Scrums: Facilitate daily meetings to discuss progress and impediments.
+<br>Impediment Removal: Actively work on removing any identified obstacles.
+<br>Progress Monitoring: Use Agile metrics and tools to monitor sprint progress.
+<br><br>
+<br>Sprint Review Preparation: Assist the team in preparing for the sprint review meeting.
+<br>Retrospective Facilitation: Lead the retrospective meeting to discuss what went well, what didn't, and how the team can improve in the next sprint.
+<br><br>
+<br>Sprint goal completion rate.
+<br>Improvement in team velocity over time.
+<br>Reduction in impediments affecting the team's progress.
+]]></description><link>https://corleroux.github.io/fcsf/roles/scrummaster.html</link><guid isPermaLink="false">Roles/ScrumMaster.md</guid><pubDate>Wed, 13 Mar 2024 09:54:57 GMT</pubDate></item><item><title><![CDATA[Backend_Team_Lead]]></title><description><![CDATA[ 
+ <br><br><br><br>
+<br>Team Leadership and Management: Oversee backend development activities, ensuring alignment with project goals.
+<br>Architecture Design: Lead the design of server-side architecture and database schemas.
+<br>Code Quality and Review: Ensure the backend codebase is optimized and maintainable.
+<br>Inter-Team Coordination: Work closely with frontend and DevOps teams to ensure seamless integration.
+<br><br>
+<br>Plan and distribute backend development tasks.
+<br>Review pull requests and maintain code quality standards.
+<br>Guide the team in implementing robust and scalable services.
+<br><br>
+<br>Stability and performance of the backend systems.
+<br>Adherence to development timelines and sprint goals.
+<br>Team productivity and efficiency.
+<br><br><br><br><br>
+<br>API Development: Design and implement RESTful APIs.
+<br>Database Management: Handle database design, optimization, and maintenance.
+<br>Integration: Collaborate with frontend developers to ensure smooth integration.
+<br><br>
+<br>Develop and test backend logic.
+<br>Optimize application for maximum speed and efficiency.
+<br>Ensure security and data protection standards are met.
+<br><br>
+<br>Quality and reliability of the backend services.
+<br>Timeliness of completing assigned tasks.
+<br>Contribution to improving system performance and scalability.
+<br><br><br><br><br>
+<br>Infrastructure Management: Oversee the management and optimization of servers, databases, and other infrastructure.
+<br>CI/CD Pipeline: Develop and maintain continuous integration and delivery pipelines.
+<br>Monitoring and Security: Implement monitoring solutions and ensure the security of the infrastructure.
+<br><br>
+<br>Lead the planning and implementation of DevOps strategies.
+<br>Collaborate with development teams to streamline deployment processes.
+<br>Conduct security audits and enforce compliance with security policies.
+<br><br>
+<br>Efficiency of deployment processes.
+<br>Uptime and reliability of the production environment.
+<br>Response time to incidents and outages.
+<br><br><br><br><br>
+<br>Automation: Implement automation tools and scripts to streamline operations.
+<br>Deployment and Monitoring: Deploy updates and fixes, monitor system performance.
+<br>Troubleshooting and Support: Provide technical support and resolve issues related to the CI/CD pipeline and infrastructure.
+<br><br>
+<br>Manage code deployments, fixes, updates, and related processes.
+<br>Build and maintain tools for deployment, monitoring, and operations.
+<br>Troubleshoot and resolve issues in dev, test, and production environments.
+<br><br>
+<br>Success rate of deployments and rollbacks.
+<br>Time to detect and resolve infrastructure issues.
+<br>Contributions to improving deployment frequency and stability.
+]]></description><link>https://corleroux.github.io/fcsf/roles/tasks-and-kpis.html</link><guid isPermaLink="false">Roles/Tasks and KPIs.md</guid><pubDate>Wed, 13 Mar 2024 08:54:44 GMT</pubDate></item><item><title><![CDATA[Web Frontend Developer]]></title><description><![CDATA[ 
+ <br><br><br><br>
+<br>Development and Implementation: Build responsive and user-friendly web interfaces.
+<br>Testing and Debugging: Identify and resolve issues to ensure optimal performance.
+<br>Continuous Learning: Stay updated with the latest web technologies and best practices.
+<br><br>
+<br>Write efficient, reusable code and libraries for future use.
+<br>Ensure the technical feasibility of UI/UX designs.
+<br>Optimize application for maximum speed and scalability.
+<br><br>
+<br>Technical Debt Management: Refactor code, improve quality, address technical debt.
+<br>Bug Fixes and Troubleshooting: Resolve issues that arise during development.
+<br>Documentation: Update technical documentation for better knowledge sharing.
+<br>Research and Learning: Explore new technologies, frameworks beneficial to the project.
+<br>Integration and Testing: Collaborate on integration, conduct tests for reliability.
+<br>Deployment Activities: Assist with deployment to environments, coordinate releases.
+<br>Meetings and Collaboration: Participate in project-related meetings, collaborate across teams.
+<br>Support and Maintenance: Provide support, address production or staging issues.
+<br>Performance Optimization: Address system inefficiencies for better performance.
+<br>Emergency Response: Handle urgent issues such as critical bugs, security vulnerabilities.
+<br><br><br>
+<br>Attend Sprint Planning Meeting: Understand goals of the upcoming sprint.
+<br>Select User Stories and Tasks: Collaborate to choose tasks that involve front-end development.
+<br>Discuss Requirements: Clarify requirements with the Product Owner or Business Analyst.
+<br>Estimate Tasks: Estimate effort for each task.
+<br><br>
+<br>Implement Features: Work on front-end features from selected user stories and tasks.
+<br>Write Code: Use languages (e.g., HTML, CSS, JavaScript) and frameworks (e.g., React, Angular).
+<br>UI Components: Create/update UI components, layouts, styles based on design specifications.
+<br>Integrate Front-End and Back-End: Collaborate with back-end developers for integration.
+<br>Testing and Code Reviews: Write unit tests, perform code reviews to ensure quality.
+<br>Daily Scrum Meetings: Communicate progress, discuss issues.
+<br>Seek Clarification: Ensure requirements are well understood and met.
+<br><br>
+<br>Finalize Features: Complete front-end feature implementation.
+<br>Bug Fixing: Identify and fix bugs or issues.
+<br>Optimize Performance: Ensure compatibility, optimize for performance.
+<br>Address Feedback: Implement feedback or changes requested by stakeholders.
+<br>Prepare for Sprint Review: Ensure all work meets acceptance criteria.
+<br><br>
+<br>Sprint Review Meeting: Demonstrate completed features to stakeholders.
+<br>Gather Feedback: Discuss improvements or changes for future sprints.
+<br>Sprint Retrospective Meeting: Reflect on sprint process, identify improvement areas.
+<br>Enhance Collaboration: Provide suggestions to improve team productivity and effectiveness.
+<br><br>
+<br>Efficiency and quality of implemented features.
+<br>Number of bugs identified and resolved.
+<br>Proactiveness in adopting new technologies and practices.
+]]></description><link>https://corleroux.github.io/fcsf/roles/webdeveloper.html</link><guid isPermaLink="false">Roles/WebDeveloper.md</guid><pubDate>Wed, 13 Mar 2024 09:38:56 GMT</pubDate></item><item><title><![CDATA[Web Team Lead Activities]]></title><description><![CDATA[ 
+ <br><br><br><br>
+<br>Project Planning and Management: Schedule tasks, manage timelines, and ensure resource availability.
+<br>Technical Oversight: Guide the architectural decisions and review code to maintain high standards.
+<br>Mentorship: Develop the technical and professional skills of team members.
+<br>Collaboration and Communication: Facilitate communication within the team and with other departments.
+<br><br>
+<br>Assign development tasks based on team members' skills and project needs.
+<br>Conduct code reviews and provide feedback to ensure best practices.
+<br>Lead discussions on implementing new technologies or frameworks.
+<br><br>
+<br>Technical Leadership: Provide technical direction and mentorship to the frontend team.
+<br>Continuous Improvement: Promote practices for continuous improvement in code quality, performance, and team efficiency.
+<br>Innovation and Research: Encourage the team to explore new technologies, tools, and practices that can benefit the project.
+<br>Stakeholder Management: Communicate effectively with stakeholders to manage expectations and report on progress.
+<br>Risk Management: Proactively identify and address risks related to the frontend development.
+<br>Emergency Response: Be prepared to lead the response to critical issues or bugs that affect the frontend.
+<br><br><br>
+<br>Lead Frontend Planning: Guide the team in selecting frontend tasks and stories for the sprint.
+<br>Define Sprint Goals: Collaborate with the Dev Manager and Scrum Master to set clear frontend goals.
+<br>Estimate Tasks: Facilitate estimation sessions for frontend tasks with the team.
+<br>Align with Overall Project Goals: Ensure frontend plans align with project objectives and timelines.
+<br><br>
+<br>Supervise Development: Monitor progress on frontend tasks, offering technical guidance and support.
+<br>Code Reviews: Lead code review sessions to maintain code quality and standards.
+<br>Facilitate Collaboration: Encourage effective collaboration between frontend and backend teams.
+<br>Address Blockers: Identify and help resolve any impediments affecting the frontend team's progress.
+<br><br>
+<br>Finalize Features: Ensure all frontend features are completed and meet quality standards.
+<br>Performance Optimization: Oversee efforts to optimize frontend performance.
+<br>Prepare for Demonstrations: Coordinate with the team to prepare for the Sprint Review meeting.
+<br>Gather Team Feedback: Collect insights and feedback from the team on sprint challenges and achievements.
+<br><br>
+<br>Present Frontend Work: Lead the presentation of completed frontend work during the Sprint Review.
+<br>Stakeholder Feedback: Gather and discuss feedback from stakeholders on the frontend deliverables.
+<br>Lead Frontend Retrospective: Conduct a retrospective session focused on the frontend team to identify areas for improvement.
+<br>Collaborate on Improvement Plans: Work with the Scrum Master to implement changes based on retrospective outcomes.
+<br><br>
+<br>Completion rate of development tasks against deadlines.
+<br>Quality of the web application's user experience.
+<br>Team satisfaction and growth.
+]]></description><link>https://corleroux.github.io/fcsf/roles/webteamlead.html</link><guid isPermaLink="false">Roles/WebTeamLead.md</guid><pubDate>Wed, 13 Mar 2024 09:17:35 GMT</pubDate></item></channel></rss>
